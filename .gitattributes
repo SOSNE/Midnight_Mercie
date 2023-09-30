@@ -1,0 +1,14 @@
+# Zalecane ustawienia dla Unity
+
+# Ustawienie LFS dla dużych binarnych plików (jeśli używasz Git LFS)
+*.psd filter=lfs diff=lfs merge=lfs -text
+
+# Zabezpiecz przed konwersją końcówek linii
+* text=auto eol=lf
+
+# Customowy merge dla plików Unity YAML
+*.unity merge=unityyamlmerge eol=lf
+*.prefab merge=unityyamlmerge eol=lf
+*.mat merge=unityyamlmerge eol=lf
+*.asset merge=unityyamlmerge eol=lf
+*.anim merge=unityyamlmerge eol=lf
